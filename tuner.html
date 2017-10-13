@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Guitar Tuner</title>
+	<link href="GuitarStyles.css" rel="stylesheet"/>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts/GuitarFunctions.js"></script>
+</head>
+
+<body>
+    
+	
+	<header>
+		<h1 id="headerTitle">SDC DESIGNS</h1>
+
+		<ul>
+  			<li><a href="contact.php">Contact</a></li>
+  			<li><a class="active" href="tuner.html">Guitar Tuner</a></li>
+  			<li><a href="index.html">Home</a></li>
+		</ul>
+
+	</header>
+
+<div id="wrapper" class="hidden">
+
+<div id="guitarTuner">
+<audio id="A1" src="Notes/A1.wav"></audio><audio id="As1" src="Notes/As1.wav"></audio>
+<audio id="B1" src="Notes/B1.wav"></audio>
+<audio id="C2" src="Notes/C2.wav"></audio><audio id="Cs2" src="Notes/Cs2.wav"></audio>
+<audio id="D2" src="Notes/D2.wav"></audio><audio id="Ds2" src="Notes/Ds2.wav"></audio>
+<audio id="E2" src="Notes/E2.wav"></audio>
+<audio id="F2" src="Notes/F2.wav"></audio><audio id="Fs2" src="Notes/Fs2.wav"></audio>
+<audio id="G2" src="Notes/G2.wav"></audio><audio id="Gs2" src="Notes/Gs2.wav"></audio>
+<audio id="A2" src="Notes/A2.wav"></audio><audio id="As2" src="Notes/As2.wav"></audio>
+<audio id="B2" src="Notes/B2.wav"></audio>
+<audio id="C3" src="Notes/C3.wav"></audio><audio id="Cs3" src="Notes/Cs3.wav"></audio>
+<audio id="D3" src="Notes/D3.wav"></audio><audio id="Ds3" src="Notes/Ds3.wav"></audio>
+<audio id="E3" src="Notes/E3.wav"></audio>
+<audio id="F3" src="Notes/F3.wav"></audio><audio id="Fs3" src="Notes/Fs3.wav"></audio>
+<audio id="G3" src="Notes/G3.wav"></audio><audio id="Gs3" src="Notes/Gs3.wav"></audio>
+<audio id="A3" src="Notes/A3.wav"></audio><audio id="As3" src="Notes/As3.wav"></audio>
+<audio id="B3" src="Notes/B3.wav"></audio>
+<audio id="C4" src="Notes/C4.wav"></audio><audio id="Cs4" src="Notes/Cs4.wav"></audio>
+<audio id="D4" src="Notes/D4.wav"></audio><audio id="Ds4" src="Notes/Ds4.wav"></audio>
+<audio id="E4" src="Notes/E4.wav"></audio>
+
+
+<table class="tg">
+  <tr>
+    <th class="tg-s3z6" colspan="7">Guitar Tuner</th>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="E2" name="c1" value="E2" id="1"><label for="1">E2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="A2" name="c2" value="A2" id="9"><label for="9">A2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="D3" name="c3" value="D3" id="17"><label for="17">D3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="G3" name="c4" value="G3" id="25"><label for="25">G3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="B3" name="c5" value="B3" id="33"><label for="33">B3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="E4" name="c6" value="E4" id="41"><label for="41">E4</label></td>
+    <td class="tg-l" id="topRight" rowspan = 11>
+		<p id="heading">Standard Tunings</p>
+		<select id="selectList" size="6" multiple>
+			<option value="1,9,17,25,33,41">E Standard</option>
+			<option value="2,10,18,26,34,42">D# Standard</option>
+			<option value="3,11,19,27,35,43">D Standard</option>
+			<option value="4,12,20,28,36,44">C# Standard</option>
+			<option value="5,13,21,29,37,45">C Standard</option>
+			<option value="6,14,22,30,38,46">B Standard</option>
+			<option value="7,15,23,31,39,47">A# Standard</option>
+			<option value="8,16,24,32,40,48">A Standard</option>
+		</select>
+		<br/><br/>
+		<p id="heading">Other Tunings</p>
+		<select id="selectList2" size="6" multiple>
+			<option value="3,9,17,27,35,43">Open D</option>
+			<option value="2,10,18,26,34,42">Open C</option>
+			<option value="3,11,19,27,35,43">Open G</option>
+			<option value="4,12,20,28,36,44">Drop D</option>
+			<option value="5,13,21,29,37,45">Drop C</option>
+			<option value="5,13,21,29,37,45">Drop B</option>
+			<option value="5,13,21,29,37,45">Drop A</option>
+			
+		</select>
+		<br/><br/><button type="button" id="stopButton">STOP</button>
+	</td>
+	
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="Ds2" name="c1" value="D#2" id="2"><label for="2">D#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Gs2" name="c2" value="G#2" id="10"><label for="10">G#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Cs3" name="c3" value="C#3" id="18"><label for="18">C#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Fs3" name="c4" value="F#3" id="26"><label for="26">F#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="As3" name="c5" value="A#3" id="34"><label for="34">A#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Ds4" name="c6" value="D#4" id="42"><label for="42">D#4</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="D2" name="c1" value="D2" id="3"><label for="3">D2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="G2" name="c2" value="G2" id="11"><label for="11">G2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="C3" name="c3" value="C3" id="19"><label for="19">C3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="F3" name="c4" value="F3" id="27"><label for="27">F3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="A3" name="c5" value="A3" id="35"><label for="35">A3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="D4" name="c6" value="D4" id="43"><label for="43">D4</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="Cs2" name="c1" value="C#2" id="4"><label for="4">C#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Fs2" name="c2" value="F#2" id="12"><label for="12">F#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="B2" name="c3" value="B2" id="20"><label for="20">B2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="E3" name="c4" value="E3" id="28"><label for="28">E3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Gs3" name="c5" value="G#3" id="36"><label for="36">G#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Cs4" name="c6" value="C#4" id="44"><label for="44">C#4</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="C2" name="c1" value="C2" id="5"><label for="5">C2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="F2" name="c2" value="F2" id="13"><label for="13">F2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="As2" name="c3" value="A#2" id="21"><label for="21">A#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Ds3" name="c4" value="D#3" id="29"><label for="29">D#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="G3" name="c5" value="G3" id="37"><label for="37">G3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="C4" name="c6" value="C4" id="45"><label for="45">C4</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="B1" name="c1" value="B1" id="6"><label for="6">B1</label></td>
+    <td class="tg-s3z6"><input type="radio" class="E2" name="c2" value="E2" id="14"><label for="14">E2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="A2" name="c3" value="A2" id="22"><label for="22">A2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="D3" name="c4" value="D3" id="30"><label for="30">D3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Fs3" name="c5" value="F#3" id="38"><label for="38">F#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="B3" name="c6" value="B3" id="46"><label for="46">B3</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="As1" name="c1" value="A#1" id="7"><label for="7">A#1</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Ds2" name="c2" value="D#2" id="15"><label for="15">D#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Gs2" name="c3" value="G#2" id="23"><label for="23">G#2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="Cs3" name="c4" value="C#3" id="31"><label for="31">C#3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="F3" name="c5" value="F3" id="39"><label for="39">F3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="As3" name="c6" value="A#3" id="47"><label for="47">A#3</label></td>
+  </tr>
+  <tr>
+    <td class="tg-s3z6"><input type="radio" class="A1" name="c1" value="A1" id="8"><label for="8">A1</label></td>
+    <td class="tg-s3z6"><input type="radio" class="D2" name="c2" value="D2" id="16"><label for="16">D2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="G2" name="c3" value="G2" id="24"><label for="24">G2</label></td>
+    <td class="tg-s3z6"><input type="radio" class="C3" name="c4" value="C3" id="32"><label for="32">C3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="E3" name="c5" value="E3" id="40"><label for="40">E3</label></td>
+    <td class="tg-s3z6"><input type="radio" class="A3" name="c6" value="A3" id="48"><label for="48">A3</label></td>
+  </tr>
+  <tr>
+    <td class="tg-b">E</td>
+    <td class="tg-b">A</td>
+    <td class="tg-b">D</td>
+    <td class="tg-b">G</td>
+    <td class="tg-b">B</td>
+    <td class="tg-b">E</td>
+  </tr>
+  <tr>
+    <td class="tg-vb"><button type="button" id="playButton1">PLAY</button></td>
+    <td class="tg-vb"><button type="button" id="playButton2">PLAY</button></td>
+    <td class="tg-vb"><button type="button" id="playButton3">PLAY</button></td>
+    <td class="tg-vb"><button type="button" id="playButton4">PLAY</button></td>
+    <td class="tg-vb"><button type="button" id="playButton5">PLAY</button></td>
+    <td class="tg-vb"><button type="button" id="playButton6">PLAY</button></td>
+  </tr>
+</table>
+	
+</div>
+
+<div id="comingSoon">
+<h3>Coming Soon:</h3>
+<p>Lower notes below A1</p>
+<p>More non-standard tuning presets</p>
+<p>Different hertz settings from A=444Hz to A=432Hz</p>
+</div>
+</div>
+</body>
+
+</html>

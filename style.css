@@ -1,0 +1,481 @@
+/*////////////////////////////////////////////////////////////////////////////////////////
+											ALL
+////////////////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+	font-family: 'Sansation';
+	src: url('fonts/Sansation-Light.ttf');
+}
+
+@font-face {
+	font-family: 'SansationBold';
+	src: url('fonts/Sansation-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'TheLightFont';
+	src: url('fonts/TheLightFont.ttf');
+}
+
+@font-face {
+	font-family: 'Neou';
+	src: url('fonts/Neou-Thin.ttf');
+}
+
+@font-face {
+	font-family: 'NeouBold';
+	src: url('fonts/Neou-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Moderne';
+	src: url('fonts/MODERNESANS.ttf');
+}
+
+h3 {
+	font-family: 'Sansation';
+	font-size: 28px;
+	color: #c9bfb5;
+	margin: 0;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #e8e6e3;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	height: 100px;
+	background: #1e262d;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0px;
+}
+
+#headerTitle {
+	position: relative;
+	margin: 0;
+	margin-top: 22px;
+	margin-left: 100px;
+	color: white;
+	font-family: 'Sansation';
+	font-size: 50px;
+	-webkit-font-smoothing: antialiased;
+	float: left;
+	letter-spacing: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-decoration: none;
+    font-family: 'Sansation';
+    font-size: 24px;
+
+    -o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
+}
+
+li a:hover{
+	color: #c9bfb5;
+}
+
+.active {
+    color: #c9bfb5;
+}
+
+#footer {
+	padding-top: 80px;
+	width: 100%;
+	height: 600px;
+	background-color: #1e262d;
+  	bottom: 0;
+  	left: 0;
+  	font-family: 'Sansation';
+  	font-size: 20px;
+}
+
+#footerABS {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	background-color: #c9bfb5;
+  	bottom: 0;
+}
+
+
+#footerTextHead {
+	padding-top:14px;
+	position: relative;
+	margin: 0;
+	bottom: 0;
+	font-family: 'Sansation';
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#footerText{
+	margin: 0;
+	padding-top: 6px;
+	font-family: 'Sansation';
+	font-size: 14px;
+}
+
+.hidden{
+	display: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////
+											HOME
+////////////////////////////////////////////////////////////////////////////////////////*/
+
+.parallax {
+	margin-top: 100px;
+    min-height: 650px;
+    background: transparent;
+}
+
+#secondParallax {
+	min-height: 500px;
+}
+
+#welcome {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Neou';
+	font-size: 90px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 30px #2d2d2d;
+	padding-top: 230px;
+	letter-spacing: 4px;
+}
+
+#waterfallText {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Neou';
+	font-size: 100px;
+	text-shadow: 1px 1px 30px #2d2d2d;
+	padding-top: 175px;
+	letter-spacing: 6px;
+}
+
+#afterBanner {
+	margin: 0 auto;
+	width: 50%;
+	position: relative;
+	background: #e8e6e3;
+	font-family: 'Sansation';
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.bottomSection {
+	padding-top: 0px;
+	min-height: 500px;
+}
+
+#contentHeader {
+	font-family: 'Sansation';
+	font-size: 36px;
+	color: #1e262d;
+
+}
+
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+#footer .left {
+	float: left;
+	width: 29%;
+	height: 400px;
+	margin-left: 18%;
+}
+#footer .right {
+	float: right;
+	width: 29%;
+	height: 400px;
+	margin-right: 18%;
+}
+
+.footerText {
+	margin: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #ffffff;
+	border: 1px solid transparent;
+	border-bottom-color: #2e3942;
+}
+
+#bottomElement {
+	border: none;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #1d3142;
+	z-index: 1001;
+
+	-webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+	#loader:before {
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		border-radius: 50%;
+		border: 2px solid transparent;
+		border-top-color: #c6bcb3;
+
+		-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    	animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+	}
+
+	#loader:after {
+		content: "";
+		position: absolute;
+		top: 13px;
+		left: 13px;
+		right: 13px;
+		bottom: 13px;
+		border-radius: 50%;
+		border: 3px solid transparent;
+		border-top-color: #334638;
+
+		-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    	animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+	}
+
+	@-ms-keyframes spin {
+    	from { -ms-transform: rotate(0deg); }
+    	to { -ms-transform: rotate(360deg); }
+	}
+
+	@-moz-keyframes spin {
+    	from { -moz-transform: rotate(0deg); }
+    	to { -moz-transform: rotate(360deg); }
+	}
+	
+	@-webkit-keyframes spin {
+    	from { -webkit-transform: rotate(0deg); }
+    	to { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+    	from {
+        	transform:rotate(0deg);
+    	}
+    	to {
+        	transform:rotate(360deg);
+    	}
+	}
+
+
+
+	#loader-wrapper .loader-section {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #1e262d;
+		z-index: 1000;
+	}
+
+	/* Loaded styles */
+	.loaded #loader-wrapper .loader-section{
+		opacity: 0;
+
+		-webkit-transition: all 1s 0.5s ease-out;
+        		transition: all 1s 0.5s ease-out;
+	}
+
+
+	.loaded #loader {
+		opacity: 0;
+
+		-webkit-transition: all 0.5s ease-out;
+        		transition: all 0.5s ease-out;
+	}
+
+	#loadingText {
+		position: relative;
+		text-align: center;
+		font-family: 'Sansation';
+		font-size: 36px;
+		z-index: 1002;
+		color: #e8e6e3;
+		top: 17%;
+	}
+
+	.loaded #loadingText {
+		opacity: 0;
+
+		-webkit-transition: all 0.5s ease-out;
+        		transition: all 0.5s ease-out;
+	}
+/*////////////////////////////////////////////////////////////////////////////////////////
+										CONTACT
+////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#formSub {
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	position: relative;
+	top: 160px;
+	padding-bottom: 80px;
+}
+
+input {
+	padding: 10px;
+	margin: 6px;
+	height: 20px;
+	width: 400px;
+	font-family: Arial;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #c9bfb5;
+}
+
+form {
+	margin-top: 5px;
+}
+
+textarea {
+	width: 400px;
+	padding: 10px;
+	margin: 6px;
+	font-family: Arial;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #c9bfb5;
+}
+
+#contactUs {
+	margin: 0;
+	color: #1e262d;
+	font-family: 'Sansation';
+	font-size: 48px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+
+}
+
+#subButton {
+	margin-top: 6px;
+	border: none;
+	height: 40px;
+	width: 420px;
+	font-size: 20px;
+	font-family: 'Sansation';
+}
+
+button {
+	background: #1e262d;
+	-o-transition:.4s;
+  	-ms-transition:.4s;
+  	-moz-transition:.4s;
+  	-webkit-transition:.4s;
+  	transition:.4s;
+  	color: white;
+}
+
+button:hover{
+	background: #c9bfb5;
+	color: #1e262d;
+}
+
+#error {
+	font-weight: bold;
+	margin: 0;
+	margin-top: 6px;
+	color: #e02a2a;
+	font-family: 'Sansation';
+	font-size: 18px;
+	height: 18px;
+}
+
+#afterSub {
+	margin: 0 auto;
+	width: 69%;
+	text-align: center;
+	font-family: 'Sansation';
+	margin-top: 300px;
+	font-size: 30px;
+
+}
+
+#thanks {
+	font-family: 'Sansation';
+	font-size: 50px;
+}
+
+
+
+#returnHome {
+	margin-top: 20px;
+	height: 40px;
+	width: 280px;
+	font-family: 'Sansation';
+	font-size: 24px;
+	border: none;
+}
+
+.g-recaptcha {
+	position: relative;
+	width: 303px;
+	margin: 0 auto;
+	padding: 10px;
+}
